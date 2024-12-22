@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #1f1f1f;
+}
+
+.main-div {
+  margin: 20px auto;
+  max-width: 800px;
+  color: white;
+  text-align: center;
+}
+.container {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container > h1 {
+  margin-right: 15px;
+}
+input {
+  font-weight: bold;
+  font-size: large;
+}
+input:first-of-type {
+  padding: 10px 20px;
+  border-radius: 8px;
+  width: 80%;
+  background-color: #00000080;
+  color: white;
+  border: none;
+}
+input:first-of-type:focus {
+  outline: 1px solid #8beeae;
+}
+input:last-of-type {
+  margin-left: -30px;
+  padding: 10px 20px;
+  background: linear-gradient(90deg, #ecfdf3, #8beeae, #8beebb, #589466);
+  background-size: 200% 200%;
+  background-position: 100% 0;
+  border-radius: 50px;
+  border: none;
+}
+table {
+  margin: 15px 0;
+  text-align: center;
+  width: 100%;
+  border: 1px solid white;
+  border-collapse: collapse;
+  font-size: larger;
+  font-weight: bold;
+}
+table thead th {
+  padding: 10px 20px;
+  background-color: #333;
+}
+thead th,
+tbody td {
+  padding: 10px;
+  border: 1px solid #444;
+}
+tbody td:nth-of-type(2) {
+  text-align: left;
+}
+
+button {
+  font-size: 16px;
+  padding: 0.5em 1.5em;
+  border-radius: 5px;
+  cursor: pointer;
+  color: black;
+}
+button:first-of-type {
+  background-color: #a08bee;
+  border: 1px solid #795894;
+}
+button:last-of-type {
+  background-color: #ee8b8b;
+  border: 1px solid #945858;
+}
+button:last-of-type:disabled {
+  background-color: #945858;
+  border: 1px solid #945858;
+}
+
+.task-name {
+  max-width: 300px;
+  overflow: hidden;
+}
+.done {
+  font-weight: 100;
+  text-decoration: line-through;
+  color: #589466;
+}
